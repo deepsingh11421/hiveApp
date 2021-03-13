@@ -1,0 +1,57 @@
+.signupPage {
+    max-width: 360px;
+    margin: auto;
+    width: 100%;
+}
+
+.signupPageHead {
+    color: rgb(49, 49, 49);
+    font-size: 0.8rem;
+}
+
+.signupPageHead>div {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.signupPageForm input {
+    background-color: white;
+    width: calc(100% - 20px);
+    display: block;
+    margin: auto;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0px 2px 5px 0px rgb(224, 224, 224);
+    border: none;
+    border-radius: 5px;
+}
+
+.signupPageTerms {
+    font-size: 0.8rem;
+    margin: 40px 0px;
+}
+
+.signupPageFormDiv input:focus {
+    outline: none;
+}
+
+.signupPageButton {
+    background-color: #4a164b;
+    border-radius: 5px;
+    font-weight: 800;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    position: relative;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.signupPageButton i {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    font-size: 1.5rem;
+}

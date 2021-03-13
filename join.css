@@ -1,0 +1,70 @@
+.joinHead {
+    padding-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    color: #310046;
+    font-weight: 400;
+    text-align: center;
+}
+
+.joinHeadUnderline {
+    margin: auto;
+    height: 2px;
+    width: 50px;
+    background-color: #F9C314;
+}
+
+.joinReport {
+    width: 84%;
+    position: relative;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 470px;
+    box-shadow: 0px 2px 5px 2px lightgrey;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 40px 10px;
+    box-sizing: border-box;
+}
+
+.joinReportHead {
+    color: #310046;
+    font-size: 0.9rem;
+}
+
+.joinReportText {
+    font-size: 0.6rem;
+    text-align: left;
+    margin: 20px 10px;
+}
+
+.joinReportSteps {
+    display: flex;
+}
+
+.joinReportStep {
+    flex-basis: 0;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.joinReportStepHead {
+    text-align: center;
+    color: #310046;
+    font-size: 0.9rem;
+}
+
+.joinReportStepText {
+    font-size: 0.6rem;
+}
+
+.joinNext {
+    background-color: #310046;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+    font-size: 1rem;
+    padding: 10px 12px;
+    border-radius: 50%;
+}

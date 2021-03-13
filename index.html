@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hive App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./hiveApp.css"/>
+    <link rel="stylesheet" href="./intro.css"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json"/>
+  </head>
+  <body>
+      <div id="modalMain" class="modal">
+        <div id="modal">
+            <div id="modalContent" class="modalContent">
+                <div>
+                    <div class="introHello">
+                        Hello, analyze your skills
+                    </div>
+                    <div class="introGetReport">
+                        Get an AI generated report
+                    </div>
+                </div>
+                
+                <img src="./assets/image/HZ logo.png" height="37%"/>
+                
+                
+                <div>
+                    <a href="./welcomePage.html">
+                        <div class="introLogin">
+                            Login with Email
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                    <div class="introCreate">
+                        <a href="./signup.html">Or Create My Account</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
+  </body>
+</html>

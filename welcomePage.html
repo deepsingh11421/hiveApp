@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hive App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./hiveApp.css"/>
+    <link rel="stylesheet" href="./welcomePage.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body  style="background-color: #F2F6FF;">
+    <div id="modalMain" class="modal">
+        <div id="modal">
+            <div class="modalBack">
+                <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div id="modalContent" class="modalContent" style="font-family: 'Montserrat', sans-serif;justify-content: space-around;padding-bottom: 60px;height: 100%;">
+                <div class="welcomePage">
+                    <div class="welcomePageHead">
+                        Welcome back!
+                    </div>
+                    <div class="welcomePageForm">
+                        <form name="myform" id="welcomePageForm" method="POST" action="./home.html">
+                            <div class="welcomePageFormDiv">
+                                <span>Email ID</span><br/>
+                                <input type="email" name="email"/>
+                            </div>
+                            <div class="welcomePageFormDiv">
+                                <span>Password</span><br/>
+                                <input type="password" name="password"/><br/><br/>
+                                <span style="color: rgb(70, 70, 70);cursor: pointer;"><b>Forgot Password</b></span>
+                            </div>
+                            <div class="welcomePageButton" onclick="formSubmit()">
+                                Login
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="welcomePageCreate">
+                                <a href="./signup.html">Or Create My Account</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function formSubmit(){
+            if(validateemail() && validatepassword()){
+                document.getElementById('welcomePageForm').submit();
+            }    
+        }
+        function validateemail()  
+        {  
+            var x=document.myform.email.value;  
+            var atposition=x.indexOf("@");  
+            var dotposition=x.lastIndexOf(".");  
+            if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+            alert("Please enter a valid e-mail address");  
+            return false;  
+            }  
+            return true
+        }  
+        function validatepassword()  
+        {  
+            var x=document.myform.password.value;  
+            var atposition=x.indexOf("@");  
+            var dotposition=x.lastIndexOf(".");  
+            if (x === '' || x === null){  
+            alert("Please enter a valid password");  
+            return false;  
+            }  
+            return true
+        } 
+    </script>
+  </body>
+</html>

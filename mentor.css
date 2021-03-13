@@ -1,0 +1,152 @@
+.joinHead {
+  padding-top: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  color: #310046;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.joinHeadUnderline {
+  margin: auto;
+  height: 2px;
+  width: 50px;
+  background-color: #f9c314;
+}
+
+.currency_div {
+  font-family: "Montserrat", sans-serif;
+  background-color: #3c123d;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  height: 40px;
+  margin: auto;
+  /* border: 1px solid black; */
+  width: 240px;
+  margin-top: 20px;
+}
+
+#mentors {
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 10px;
+  box-sizing: border-box;
+  padding: 0px 50px;
+  /* display: none; */
+}
+@media (min-width: 300px) {
+  #mentors {
+    align-items: center;
+  }
+}
+
+.mentor {
+  /* margin-left: -100px; */
+  display: flex;
+  width: 300px;
+  /* border: 1px solid black; */
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.mentor:hover {
+  cursor: pointer;
+}
+
+.mentor_detail {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.mentor_name {
+  /* position: absolute; */
+}
+
+.mentor_photo {
+  /* background-image: url(./assets/image/dummy-profile-pic-male1-300x300.jpg); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100px;
+  height: 100px;
+}
+
+#mentor1 {
+  background-image: url(./assets/image/maxresdefault.jpg);
+}
+#mentor2 {
+  background-image: url(./assets/image/82cc87f2ed862ee45d928c19046ee042d5eec0c9_2400x1800.jpg);
+}
+#mentor3 {
+  background-image: url(./assets/image/edward.jpg);
+}
+#mentor4 {
+  background-image: url(./assets/image/david.jpg);
+}
+
+.stars {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.star {
+  margin-left: 2px;
+  font-size: 10px;
+  color: #f9c314;
+}
+
+.photo_section {
+  box-sizing: border-box;
+  box-shadow: 1px 1px 10px 1px rgb(191, 191, 191);
+  border-radius: 20px;
+  background-color: white;
+  padding: 8px 10px 5px 10px;
+}
+
+#about_mentor {
+  font-family: "Montserrat", sans-serif;
+  margin: 50px 20px;
+  /* border: 1px solid black; */
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+#map {
+  position: relative;
+  margin-top: 30px;
+  display: table;
+  width: 100vw;
+  height: 60vh;
+  z-index: 10;
+}
+
+#hide_logo {
+  position: absolute;
+  width: 100vw;
+  height: 15px;
+  background-color: #F2F6FF;;
+  bottom: 0;
+  z-index: 10001;
+}

@@ -1,0 +1,32 @@
+.introHello {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.introGetReport {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.introLogin {
+    border-radius: 5px;
+    font-weight: 800;
+    padding: 20px 40px;
+    background-color: #4a164b;
+    min-width: 300px;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.introLogin i {
+    position: absolute;
+    right: 40px;
+    top: 13px;
+    font-size: 2rem;
+}
+
+.introCreate {
+    margin-top: 30px;
+}

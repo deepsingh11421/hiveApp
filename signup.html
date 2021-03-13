@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hive App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./hiveApp.css"/>
+    <link rel="stylesheet" href="./signup.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body  style="background-color: #F2F6FF;">
+    <div id="modalMain" class="modal">
+        <div id="modal">
+            <div class="modalBack">
+                <a href="./intro.html"><i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div id="modalContent" class="modalContent" style="font-family: 'Montserrat', sans-serif;justify-content: space-around;padding-bottom: 60px;height: 100%;">
+                <div class="signupPage">
+                    <div class="signupPageHead">
+                        Hello, let's know you!
+                        <div>
+                            Join our Hive!
+                        </div>
+                    </div>
+                    <div class="signupPageForm">
+                        <form name="myform" method="POST" id="signupPageForm" action="./otp.html">
+                            <div style="display: flex;justify-content: space-between;">
+                                <input name="userFirstname" type="text" placeholder="First Name" style="width: 43%;margin: 0px;"/>
+                                <input name="userLastname" type="text" placeholder="Last Name" style="width: 43%;margin: 0px;"/>
+                            </div><br/>
+                            <input name="email" type="email" placeholder="Enter your Email ID"/>
+                            <div class="signupPageTerms">
+                                By creating an account, you agree to our<br/>
+                                <b>Terms of Service</b> and <b>Privacy Policy</b>
+                            </div>
+                            <div class="signupPageButton" onclick="formSubmit()">
+                                Get Started
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function formSubmit(){
+            if(validateemail()){
+                document.getElementById('signupPageForm').submit();
+            }    
+        }
+        function validateemail()  
+        {  
+            var x=document.myform.email.value;  
+            var atposition=x.indexOf("@");  
+            var dotposition=x.lastIndexOf(".");  
+            if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+            alert("Please enter a valid e-mail address");  
+            return false;  
+            }  
+            return true
+        }  
+    </script>
+  </body>
+</html>

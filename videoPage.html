@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hive App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./hiveApp.css"/>
+    <link rel="stylesheet" href="./videoPage.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body style="background-color: #F2F6FF;">
+    <div id="videoAppHeaderMenu" class="videoAppHeaderMenu">
+        <div class="videoAppHeaderMenuClose">
+            <i class="fas fa-times" onclick="headerMenuHide()"></i>
+        </div>
+         <div class="videoAppHeaderMenuItem">
+            <img  style="margin-left:70px;margin-top: -40px;" src="./assets/image/Homess-removebg-preview.png" width="150px"/>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <img src="./assets/image/home.png" width="25px"/>
+            <span>HOME</span>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <img src="./assets/image/home.png" width="25px"/>
+            <span>PARTICIPATE</span>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <img src="./assets/image/home.png" width="25px"/>
+            <span>VIEW REPORT</span>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <img src="./assets/image/home.png" width="25px"/>
+            <span>JOIN CLUB</span>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <img src="./assets/image/home.png" width="25px"/>
+            <span>SUPPORT</span>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <img src="./assets/image/home.png" width="25px"/>
+            <span>TRANSACTION</span>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <img src="./assets/image/home.png" width="25px"/>
+            <span>PROFILE</span>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <img src="./assets/image/home.png" width="25px"/>
+            <span>LOGOUT</span>
+        </div>
+    </div>
+    <div class="videoApp" id="App">
+            <div class="videoAppHeader">
+                <div class="menu">
+                    <i class="fas fa-bars" onclick="headerMenuShow()"></i>
+                </div>
+                <div class="headerSearch">
+                    <input id="searchInput" type="text"/>
+                    <label for="searchInput"><i class="fas fa-search"></i></label>
+                </div>
+            </div>
+
+            <div class="performanceVideos">
+                <div class="videoPageOption">
+                    <iframe width="100%" src="https://www.youtube.com/embed/uVaHs6rbxww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="videoPageChoice">
+                        <div><i class="far fa-chart-bar"></i> Vote</div>
+                        <div><i class="fas fa-thumbs-up"></i> Like</div>
+                        <div><i class="fas fa-share-alt"></i> Share</div>
+                    </div>
+                </div>
+                <div class="videoPageOption">
+                    <iframe width="100%" src="https://www.youtube.com/embed/uVaHs6rbxww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="videoPageChoice">
+                        <div><i class="far fa-chart-bar"></i> Vote</div>
+                        <div><i class="fas fa-thumbs-up"></i> Like</div>
+                        <div><i class="fas fa-share-alt"></i> Share</div>
+                    </div>
+                </div>
+                <div class="videoPageOption">
+                    <iframe width="100%" src="https://www.youtube.com/embed/uVaHs6rbxww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="videoPageChoice">
+                        <div><i class="far fa-chart-bar"></i> Vote</div>
+                        <div><i class="fas fa-thumbs-up"></i> Like</div>
+                        <div><i class="fas fa-share-alt"></i> Share</div>
+                    </div>
+                </div>
+                <div class="videoPageOption">
+                    <iframe width="100%" src="https://www.youtube.com/embed/uVaHs6rbxww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="videoPageChoice">
+                        <div><i class="far fa-chart-bar"></i> Vote</div>
+                        <div><i class="fas fa-thumbs-up"></i> Like</div>
+                        <div><i class="fas fa-share-alt"></i> Share</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="footer">
+                <a class="footerItem" style="border-top-left-radius: 40px;" href="./home.html">
+                    <div>
+                        <img src="./assets/image/Me - yellow.png" height="35px" width="35px"/>
+                        <div style="color: #f8c212;">
+                            Home
+                        </div>
+                    </div>
+                </a>
+                <a class="footerItem" href="./join.html">
+                    <div>
+                        <img src="./assets/image/Join Club - White.png" height="35px" width="35px"/>
+                        <div>
+                            Join Club
+                        </div>
+                    </div>
+                </a>
+                <a class="footerItem">
+                    <div>
+                        <img src="./assets/image/Participate - white.png" height="35px" width="35px"/>
+                        <div>
+                            Participate
+                        </div>
+                    </div>
+                </a>
+                <a href="./mentor.html" class="footerItem" style="border-top-right-radius: 40px;">
+                    <div>
+                        <img src="./assets/image/mentors_white.png" height="35px" width="35px"/>
+                        <div>
+                            Mentors
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+    </div>
+
+    <script src="./header.js"></script>
+  </body>
+</html>

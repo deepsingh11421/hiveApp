@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hive App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./hiveApp.css"/>
+    <link rel="stylesheet" href="./mentor.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+    <script src="https://use.fontawesome.com/0e9533a028.js"></script>
+    
+  </head>
+  <body style="background-color: #F2F6FF;">
+    <div id="videoAppHeaderMenu" class="videoAppHeaderMenu">
+        <div class="videoAppHeaderMenuClose">
+            <i class="fas fa-times" onclick="headerMenuHide()"></i>
+        </div>
+         <div class="videoAppHeaderMenuItem">
+            <img  style="margin-left:70px;margin-top: -40px;" src="./assets/image/Homess-removebg-preview.png" width="150px"/>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <a href="./home.html">
+                <img src="./assets/image/home.png" width="25px"/>
+            <span>Home</span>
+            </a>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <a href="">
+                <img src="./assets/image/sidebar icons/hand-shake.png" width="25px"/>
+            <span>Participate</span>
+            </a>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <a href="./viewReport.html">
+                <img src="./assets/image/sidebar icons/report.png" width="25px"/>
+            <span>View Report</span>
+            </a>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <a href="./mentor.html">
+                <img src="./assets/image/sidebar icons/group.png" width="25px"/>
+            <span>Connect with Global Speakers</span>
+            </a>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <a href="">
+                <img src="./assets/image/sidebar icons/technical-support1.png" width="25px"/>
+            <span>Support</span>
+            </a>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+           <a href="">
+                <img src="./assets/image/sidebar icons/Transaction.png" width="25px"/>
+            <span>Transaction</span>
+           </a>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+           <a href="">
+                <img src="./assets/image/sidebar icons/user (1).png" width="25px"/>
+            <span>Profile</span>
+           </a>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <a href="">
+                <img src="./assets/image/sidebar icons/logout.png" width="25px"/>
+            <span>Logout</span>
+            </a>
+        </div>
+    </div>
+    <div class="videoAppHeader">
+        <div class="menu" style="margin-top: 5px;">
+            <i class="fas fa-bars" onclick="headerMenuShow()"></i>
+        </div>
+    </div>
+    <div class="joinHead">
+        Connect with the mentors
+        <div class="joinHeadUnderline"></div>
+    </div>
+   
+    <div id="mentors">
+         <div class="currency_div">
+        Digital currency - 50 coins
+        </div>
+        <!-- <a href="./mentor1.html">
+            <div class="mentor">
+            <div class="photo_section">
+                <div class="mentor_photo" id="mentor1"></div>
+                <div class="stars">
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="mentor_detail">
+                <div class="mentor_name">
+                    Larry Bums
+                </div>
+                <div>
+                    Designation
+                </div>
+            </div>
+        </div>
+        </a> -->
+         <!-- <a href="./mentor2.html">
+             <div class="mentor" >
+            <div class="photo_section">
+                <div class="mentor_photo" id="mentor2">
+
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="mentor_detail">
+                <div class="mentor_name">
+                    Stephen Burt
+                </div>
+                <div>
+                    Designation
+                </div>
+            </div>
+        </div>
+         </a> -->
+         <!-- <a href="./mentor3.html">
+             <div class="mentor">
+            <div class="photo_section">
+                <div class="mentor_photo" id="mentor3">
+
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="mentor_detail">
+                <div class="mentor_name">
+                    Edward Burtynsky 
+                </div>
+                <div>
+                    Designation
+                </div>
+            </div>
+        </div>
+         </a> -->
+         <!-- <a href="./mentor3.html" style="margin-bottom: 70px;">
+             <div class="mentor">
+            <div class="photo_section">
+                <div class="mentor_photo" id="mentor4">
+
+                </div>
+                <div class="stars">
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="mentor_detail">
+                <div class="mentor_name">
+                    David Byrne
+                </div>
+                <div>
+                    Designation
+                </div>
+            </div>
+        </div>
+         </a> -->
+
+        <div id="map">
+            <div id="hide_logo"></div>
+        </div>
+
+         <!-- <iframe src="http://maps.google.com/maps?q=25.3076008,51.4803216&z=16&output=embed" height="450" width="600"></iframe> -->
+    </div>
+
+    
+        
+    <div class="footer">
+        <a class="footerItem" style="border-top-left-radius: 40px;" href="./home.html">
+            <div>
+                <img src="./assets/image/Me - white.png" height="35px" width="35px"/>
+                <div>
+                    Home
+                </div>
+            </div>
+        </a>
+        <a class="footerItem" href="./join.html">
+            <div>
+                <img src="./assets/image/Join Club - White.png" height="35px" width="35px"/>
+                <div>
+                    Join Club
+                </div>
+            </div>
+        </a>
+        <a class="footerItem">
+            <div>
+                <img src="./assets/image/Participate - white.png" height="35px" width="35px"/>
+                <div>
+                    Participate
+                </div>
+            </div>
+        </a>
+        <a href="./mentor.html" class="footerItem" style="border-top-right-radius: 40px;">
+            <div>
+                <img src="./assets/image/mentors.png" height="35px" width="35px"/>
+                <div style="color: #f8c212;">
+                    Mentors
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <script src="./header.js"></script>
+    <script src="./mentor.js"></script>
+  </body>
+</html>

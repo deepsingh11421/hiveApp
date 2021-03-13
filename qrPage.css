@@ -1,0 +1,104 @@
+.qrHead {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #310046;
+    font-weight: 800;
+    text-align: center;
+}
+
+.qrImg {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.qrText {
+    color: #61227c;
+    width: 80%;
+    margin: auto;
+    font-size: 0.8rem;
+}
+
+.qrHeadUnderline {
+    margin: auto;
+    height: 2px;
+    width: 50px;
+    background-color: #F9C314;
+}
+
+.qrReport {
+    width: 84%;
+    position: relative;
+    background-color: white;
+    margin: auto;
+    top: 40px;
+    max-width: 300px;
+    box-shadow: 0px 2px 5px 2px lightgrey;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.qrReportHead {
+    color: #310046;
+    font-size: 0.9rem;
+}
+
+.qrReportText {
+    font-size: 0.6rem;
+    text-align: left;
+    margin: 20px 10px;
+}
+
+.qrReportSteps {
+    display: flex;
+}
+
+.qrReportStep {
+    flex-basis: 0;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.qrReportStepHead {
+    text-align: center;
+    color: #310046;
+    font-size: 0.9rem;
+}
+
+.qrReportStepText {
+    font-size: 0.6rem;
+}
+
+.qrNext {
+    background-color: #310046;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+    font-size: 1rem;
+    padding: 10px 12px;
+    border-radius: 50%;
+}
+
+.filter_search{
+    box-shadow: 1px 1px 10px 1px rgb(208, 208, 208);
+    border-radius: 20px;
+    background-color: white;
+    padding:7px 20px;
+    /* border: 1px solid black; */
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+     margin-top: 10px;
+     margin-bottom: 30px;
+}
+.input::placeholder{
+    /* padding-left: 15px; */
+    font-size: 10px;
+}
+.input{
+    outline: none;
+    border: none;
+}

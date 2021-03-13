@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hive App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./hiveApp.css"/>
+    <link rel="stylesheet" href="./otp.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body  style="background-color: #F2F6FF;">
+    <div id="modalMain" class="modal">
+        <div id="modal">
+            <div class="modalBack">
+                <a href="./signup.html"><i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div id="modalContent" class="modalContent" style="font-family: 'Montserrat', sans-serif;justify-content: space-around;padding-bottom: 60px;height: 100%;">
+                <div class="otpPage">
+                    <div class="otpPageHead">
+                        Email Verification
+                        <div>
+                            Enter your verification code
+                        </div>
+                    </div>
+                    <div class="otpPageText">
+                        Enter the 4-digit code sent to you at.
+                        <div>
+                            Did you enter the correct email?
+                        </div>
+                    </div>
+                    <div class="otpPageForm">
+                        <form name="myform" method="GET" id="otpPageForm">
+                            <input id="num1" placeholder="_" name="num1" type="number" oninput="numValidation(event)" min="0" max="9"/>
+                            <input id="num2" placeholder="_" name="num2" type="number" oninput="numValidation(event)" min="0" max="9"/>
+                            <input id="num3" placeholder="_" name="num3" type="number" oninput="numValidation(event)" min="0" max="9"/>
+                        </form>
+                    </div>
+                    <div id="otpPageDynamic" class="otpPageDynamic">
+                        Resent code in <span id="counter">10 seconds</span>
+                    </div>
+                    <a href="./selectionPage.html">
+                        <div class="otpNext">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var number = 10;
+        var counterSpan = document.getElementById('counter');
+        var interval = setInterval(function(){
+            number--;
+            if(number === 0){
+                document.getElementById('otpPageDynamic').innerHTML = `<a href="./signup.html"><div style="color:#4a164b;font-weight:800;">Resend?</div></a>`;
+                clearInterval(interval);
+                return;
+            }
+            counterSpan.innerHTML = number + ' seconds';
+        },1000);
+
+        function formSubmit(){
+            if(validateemail()){
+                document.getElementById('otpPageForm').submit();
+            }    
+        }
+        function numValidation(e){
+            if(e.data >= '0' && e.data <= '9' ){
+                if(e.target.value !== ''){
+                    e.target.value = e.data;
+                }
+                if(e.target.id !== 'num3' && e.data != null){
+                    var number = e.target.id;
+                    var n = number.slice(3,4);
+                    // console.log(n);
+                    var id = 'num' + (Number(n)+1);
+                    console.log(id);
+                    document.getElementById(id).focus();
+                }
+            }
+        }
+    </script>
+  </body>
+</html>

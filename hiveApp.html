@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hive App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./hiveApp.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- <div id="modalMain" class="modal">
+        <div id="modal">
+            <div class="modalBack">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div id="modalContent" class="modalContent">
+                <img src="./assets/image/Screenshot (134).png" height="50%"/>
+                
+                <div class="modalText">
+                    Hi,How are you?
+                    <div class="modalTextDropperUp"></div>
+                </div>
+                <div class="modalText" style="color: rgb(255, 72, 246);">
+                    Hello,I'm Good
+                    <div class="modalTextDropper"></div>
+                </div>
+                <div class="modalNext" style="padding: 25px;background-image: radial-gradient(#7A0BAA,#310046);border: 4px solid rgb(161, 161, 161);box-shadow: none;" onclick="pageChange('secondPage')">
+                    
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div id="videoAppHeaderMenu" class="videoAppHeaderMenu">
+        <div class="videoAppHeaderMenuClose">
+            <i class="fas fa-times" onclick="headerMenuHide()"></i>
+        </div>
+         <div class="videoAppHeaderMenuItem">
+            <img  style="margin-left:70px;margin-top: -40px;" src="./assets/image/Homess-removebg-preview.png" width="150px"/>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <img src="./assets/image/home.png" width="25px"/>
+            <span>HOME</span>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <img src="./assets/image/home.png" width="25px"/>
+            <span>PARTICIPATE</span>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <img src="./assets/image/home.png" width="25px"/>
+            <span>VIEW REPORT</span>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <img src="./assets/image/home.png" width="25px"/>
+            <span>JOIN CLUB</span>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <img src="./assets/image/home.png" width="25px"/>
+            <span>SUPPORT</span>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <img src="./assets/image/home.png" width="25px"/>
+            <span>TRANSACTION</span>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <img src="./assets/image/home.png" width="25px"/>
+            <span>PROFILE</span>
+        </div>
+        <div class="videoAppHeaderMenuItem">
+            <img src="./assets/image/home.png" width="25px"/>
+            <span>LOGOUT</span>
+        </div>
+    </div>
+    <div class="App" id="App">
+        <div class="home">
+            <div class="header">
+                <div class="menu">
+                    <i class="fas fa-bars" onclick="headerMenuShow()"></i>
+                </div>
+                <div class="heading"><b>Welcome</b> Sudhanshu</div>
+            </div>
+
+            <div class="circleScore">
+                <div class="circleScoreProgress">
+                    <div class="progressCircle over50 p75">
+                        <span>75%</span>
+                        <div class="leftHalfClipper">
+                            <div class="first50Bar"></div>
+                            <div class="valueBar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scoreText">Great job. You improved your score from 55%</div>
+                <!-- <div class="scoreText">Please go back and record your video to get AI assessment</div> -->
+            </div>
+
+
+            <div class="performanceTab">
+                <div class="choice">
+                    <div class="active">Performance</div>
+                    <div>Progress</div>
+                </div>
+                <div class="performanceTopic">
+                    <div class="performanceTopicItem">
+                        <img src="./assets/image/WPM score(2).png" height="40px" width="40px"/>
+                        <div style="color: #f8c212;">
+                            WPM Score
+                        </div>
+                    </div>
+                    <div class="performanceTopicHr"></div>
+                    <div class="performanceTopicItem">
+                        <img src="./assets/image/pausing score.png" height="40px" width="40px"/>
+                        <div>
+                            Pausing Score
+                        </div>
+                    </div>
+                    <div class="performanceTopicHr"></div>
+                    <div class="performanceTopicItem">
+                        <img src="./assets/image/energy score.png" height="40px" width="40px"/>
+                        <div>
+                            Energy Score
+                        </div>
+                    </div>
+                    <div class="performanceTopicHr"></div>
+                    <div class="performanceTopicItem">
+                        <img src="./assets/image/clarity score.png" height="40px" width="40px"/>
+                        <div>
+                            Clarity Score
+                        </div>
+                    </div>
+                </div>
+                <div class="wpm">
+                    <div class="wpmHead">
+                        Complete WPM Score
+                    </div>
+                    <div class="wpmSubhead">
+                        Lorem is simply dummy text updated
+                    </div>
+                    <div class="progressBar">
+                        <div id="wpmScoreBar" class="progress"></div>
+                    </div>
+                    <div class="openContainer">
+                        <div class="open">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="score">
+                        170/<span style="font-size: 0.6rem; color: rgb(175, 175, 175);">500 WPM</span>
+                    </div>
+                </div>
+                <div class="performanceVideos">
+                    <div>
+                        <iframe width="100%" src="https://www.youtube.com/embed/uVaHs6rbxww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="performanceVideosChoice">
+                            <div><i class="far fa-chart-bar"></i> Vote</div>
+                            <div><i class="fas fa-thumbs-up"></i> Like</div>
+                            <div><i class="fas fa-share-alt"></i> Share</div>
+                        </div>
+                    </div>
+                    <div style="color: white;font-size: 0.6rem;position: absolute; bottom: -20px;right: 0;font-family: 'Montserrat', sans-serif;">
+                        <a href="./videoPage.html">View All</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <a class="footerItem" style="border-top-left-radius: 40px;" href="./hiveApp.html">
+                    <div>
+                        <img src="./assets/image/Me - yellow.png" height="35px" width="35px"/>
+                        <div style="color: #f8c212;">
+                            Home
+                        </div>
+                    </div>
+                </a>
+                <a class="footerItem" href="./join.html">
+                    <div>
+                        <img src="./assets/image/Join Club - White.png" height="35px" width="35px"/>
+                        <div>
+                            Join Club
+                        </div>
+                    </div>
+                </a>
+                <a class="footerItem">
+                    <div>
+                        <img src="./assets/image/Participate - white.png" height="35px" width="35px"/>
+                        <div>
+                            Participate
+                        </div>
+                    </div>
+                </a>
+                <a href="./mentor.html" class="footerItem" style="border-top-right-radius: 40px;">
+                    <div>
+                        <img src="./assets/image/mentors_white.png" height="35px" width="35px"/>
+                        <div>
+                            Mentors
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./hiveApp.js"></script>
+    <script src="./header.js"></script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hive App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./hiveApp.css"/>
+    <link rel="stylesheet" href="./selectionPage.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body  style="background-color: #F2F6FF;">
+    <div id="modalMain" class="modal">
+        <div id="modal">
+            <!-- <div class="modalBack">
+                <a href="./signup.html"><i class="fas fa-arrow-left"></i></a>
+            </div> -->
+            <div id="modalContent" class="modalContent" style="font-family: 'Montserrat', sans-serif;justify-content: space-around;padding-bottom: 60px;height: 100%;">
+                <div class="selectionPage">
+                    <div class="selectionPageTextBox">
+                        Briefly help me identify yourself for AI to be more precise
+                    </div>
+                    <div class="selectionPageChoices">
+                      <div id="student" class="selectionPageChoice" onclick="select('student')">
+                        <img id="student_img" src="./assets/image/Slide 10 icons/graduated.png" width="70px"/>
+                        <div>
+                          Student
+                        </div>
+                      </div>
+                      <div id="teacher" class="selectionPageChoice" onclick="select('teacher')">
+                        <img id="teacher_img" src="./assets/image/Slide 10 icons/teacher (1).png" width="70px"/>
+                        <div>
+                          Teacher
+                        </div>
+                      </div>
+                      <div id="working_professional" class="selectionPageChoice" onclick="select('working_professional')">
+                        <img id="working_professional_img" src="./assets/image/Slide 10 icons/suitcase.png" width="70px"/>
+                        <div>
+                          Working Professional
+                        </div>
+                      </div>
+                      <div id="others" class="selectionPageChoice" onclick="select('others')">
+                        <img id="others_img" src="./assets/image/Slide 10 icons/man.png" width="70px"/>
+                        <div>
+                          Others
+                        </div>
+                      </div>
+                    </div>
+                    <a href="./recordPage.html">
+                      <div class="selectionPageNext">
+                        <i class="fas fa-arrow-right"></i>
+                      </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      var data;
+      var imgData = {
+        student: {
+          active: './assets/image/Slide 10 icons/graduated white.png',
+          inactive: './assets/image/Slide 10 icons/graduated.png'
+        },
+        teacher: {
+          active: './assets/image/Slide 10 icons/teacher white.png',
+          inactive: './assets/image/Slide 10 icons/teacher (1).png'
+        },
+        working_professional: {
+          active: './assets/image/Slide 10 icons/suitcase white.png',
+          inactive: './assets/image/Slide 10 icons/suitcase.png'
+        },
+        others: {
+          active: './assets/image/Slide 10 icons/man white.png',
+          inactive: './assets/image/Slide 10 icons/man.png'
+        }
+      }
+      function select(id){
+        if(data !== undefined){
+          document.getElementById(data).classList.remove('selectionPageActive');
+          var imgId = data + '_img';
+          document.getElementById(imgId).src = imgData[data].inactive;
+        }
+        var choice = document.getElementById(id);
+        choice.classList.add('selectionPageActive');
+        var imgId = id + '_img';
+        document.getElementById(imgId).src = imgData[id].active;
+        data = id;
+      }
+    </script>
+  </body>
+</html>
